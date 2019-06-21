@@ -19,7 +19,7 @@ Statement st;
 System.out.print(d_id);*/
 try{
 	Class.forName("com.mysql.jdbc.Driver");
-    con=(Connection)DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aof_db","root", "gulsum14");  
+    con=(Connection)DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/aof_db","root", "password");  
 	
 	if(!con.isClosed()){
 		pst = con.prepareStatement("INSERT INTO dersler (ders_ad) VALUES (?)");
